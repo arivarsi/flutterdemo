@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Demo App',
       home:Login(),
       routes:{
-        'login': (context) =>Login(),
-        'register':(context)=>Register(),
+        '/login': (context) =>Login(),
+        '/register':(context)=>Register(),
       },
     );
   }
