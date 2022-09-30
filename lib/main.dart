@@ -1,6 +1,7 @@
 
 import 'package:demo_app1/screens/login.dart';
 import 'package:demo_app1/screens/register.dart';
+import 'package:demo_app1/screens/symbols.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes:{
         '/login': (context) =>Login(),
         '/register':(context)=>Register(),
+        '/symbols':(context)=>Symbols(),
       },
     );
   }

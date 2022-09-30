@@ -39,6 +39,12 @@ class Register extends StatelessWidget {
                               child: Column(
                                   children:<Widget>[
                                     TextField(
+                                        keyboardType: TextInputType.name,
+                                        decoration: InputDecoration(
+                                            labelText: 'Name'
+                                        )
+                                    ),
+                                    TextField(
                                         keyboardType: TextInputType.emailAddress,
                                         decoration: InputDecoration(
                                             labelText: 'Email'
@@ -50,9 +56,17 @@ class Register extends StatelessWidget {
                                             labelText: 'Password'
                                         )
                                     ),
+                                    TextField(
+                                        keyboardType: TextInputType.visiblePassword,
+                                        decoration: InputDecoration(
+                                            labelText: 'Confirm Password'
+                                        )
+                                    ),
                                     ElevatedButton(
-                                        onPressed: ()=>print('Login Clicked'),
-                                        child: Text('Login'),
+                                        onPressed: (){
+                                          Navigator.pushNamed(context, "/symbols");
+                                        },
+                                        child: Text('Register'),
                                         style: ElevatedButton.styleFrom(minimumSize: Size(double.infinity, 36))
                                     ),
                                     Padding(
